@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- Vendor CSS Files -->
+        
+
+        <meta charset="utf-8">
+        <title>3D 충청남도 로케이션</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Law Firm Website Template" name="keywords">
+        <meta content="Law Firm Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+        <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <link href="files/page_1/styles.css" type="text/css" rel="stylesheet"/>
+
+
+        <!-- foot_banner style -->
+        <style type="text/css">        
+            /* banner */
+            .banner {position: relative; width: 100%; height: 210px; top: 0px;  margin:0 auto; padding:0; overflow: hidden;}
+            .banner ul {position: absolute; margin: 0px; padding:0; list-style: none; }
+            .banner ul li {float: left; width: 500px; height: 210px; margin:0; padding:0;}
+            li { display: inline; }
+        </style>
+
+
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            
+        <script src="js/foot_banner.js"></script>     
+          
+        <script src="js/search.js"></script>
+
+        <!-- <script type="text/javascript">
+            function filter(){
+        
+                var value, name, item, i;
+        
+                value = document.getElementById("value").value.toUpperCase();
+                item = document.getElementsByClassName("item");
+        
+                for(i=0;i<item.length;i++){
+                name = item[i].getElementsByClassName("name");
+                if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+                    item[i].style.display = "flex";
+                }else{
+                    item[i].style.display = "none";
+                }
+                }
+            }
+        </script>
+
+        <script>
+            var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+            var eventer = window[eventMethod];
+            var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+            eventer(messageEvent,function(e) {
+            if (e.data.substring(0,3)=='frm') document.getElementById('estframe').style.height = e.data.substring(3) + 'px';
+            },false);
+        </script> -->
+
+        <!--지도-->
+        <script type="text/javascript">
+
+            function changeImg(img){
+             var mapimg = document.getElementById('map');
+             mapimg.src = img;
+            }
+            
+            function changeImg1(obj, img){
+             var mapimg1 = document.getElementById('map1');
+             mapimg1.src = img;
+            }
+            
+            </script>
+            
+            
+            <style type="text/css">
+                p{
+                    text-align: center;
+                }
+            </style>
+    </head>
+
+    <body onload="showImage()" style="overflow-x:hidden">
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <!-- style="text-align: center;" -->
+                            <div class="logo" >
+                                <a href="index.html">
+                                    <img src="img/logo.png" style="width: 154px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="top-bar-right">
+                                <div class="social">
+                                    <a href="https://www.cnfc.or.kr/" target="_blank"><i class="fas fa-home"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCTVM6iw_DjQpou88n4dCvTA" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/chungnam_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="wrapper">
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">           
+                            <div class="navbar-nav mr-auto">
+                                <div class="nav-item dropdown">   
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">장르별</a>
+                                    <div class="dropdown-menu">
+                                        <a href="service.html" class="dropdown-item" >근대/현대</a>
+                                        <a href="service1.html" class="dropdown-item">로맨스/멜로</a>
+                                        <a href="service2.html" class="dropdown-item">호러/스릴러</a>
+                                        <a href="service3.html" class="dropdown-item">액션/느와르</a>
+                                        <a href="service4.html" class="dropdown-item">사극/역사</a>
+                                    </div>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">지역별</a>
+                                    <div class="dropdown-menu">
+                                      <a href="ca.html" class="dropdown-item">천안시</a>
+                                      <a href="gj.html" class="dropdown-item">공주시</a>
+                                      <a href="br.html" class="dropdown-item">보령시</a>
+                                      <a href="as.html" class="dropdown-item">아산시</a>
+                                      <a href="ss.html" class="dropdown-item">서산시</a>
+                                      <a href="ns.html" class="dropdown-item">논산시</a>
+                                      <a href="gr.html" class="dropdown-item">계룡시</a>
+                                      <a href="dj.html" class="dropdown-item">당진시</a>
+                                      <a href="gs.html" class="dropdown-item">금산군</a>
+                                      <a href="by.html" class="dropdown-item">부여군</a>
+                                      <a href="sc.html" class="dropdown-item">서천군</a>
+                                      <a href="cy.html" class="dropdown-item">청양군</a>
+                                      <a href="hs.html" class="dropdown-item">홍성군</a>
+                                      <a href="ys.html" class="dropdown-item">예산군</a>
+                                      <a href="ta.html" class="dropdown-item">태안군</a>
+                                    </div>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">콘셉트별</a>
+                                    <div class="dropdown-menu">
+                                        <a href="service9.html" class="dropdown-item">힐링</a>
+                                        <a href="service10.html" class="dropdown-item">문화공간</a>
+                                        <a href="service11.html" class="dropdown-item">레트로</a>
+                                        <a href="service12.html" class="dropdown-item">이국적</a>
+                                        <a href="service13.html" class="dropdown-item">활동적</a>
+                                    </div>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">게시판</a>
+                                    <div class="dropdown-menu">
+                                        <!-- 새 탭에 창이 나오도록 변경 target="_blank" -->
+                                        <a href="https://www.cnfc.or.kr/notices" class="dropdown-item" target="_blank">공지사항</a>
+                                        <a href="https://www.cnfc.or.kr/login" class="dropdown-item" target="_blank">질문사항</a>
+                                        <!-- <a href="http://192.168.1.118/index.php" class="dropdown-item" target="_blank">이벤트</a> -->
+                                    </div>
+                                </div>
+                                <a href="http://192.168.1.118/index.php" class="nav-item nav-link" style="width: 200px;">나만의 여행지</a>
+                            </div>
+
+                            <!-- Nav Bar End -->
+                            <div class="searchbox2">
+                                <div class="header">
+                                  <fieldset style="width:400px; float: right;">
+                                  <input onkeyup="filter()" type="text" id="value" name="search" onkeydown="enterSearch()" >
+                                  <input type="button" class='sch_smit' value="검색" onclick="myFunction()" style="float: right;"/>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+            <br>
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel" style="width: 100%; height: auto !important;">
+                <!-- 밑단 커서 -->
+                <!-- <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                </ol> -->
+                <div class="">
+                    <div class="">
+                        <video autoplay loop width="95%" muted>
+                            <source src="img/main.mp4" style="width: 1370; height: 520;" >
+                        </video>
+                        <!-- <iframe width="1370" height="520" src="https://www.youtube.com/embed/sWlC04cMzFs?amp;autoplay=1&amp;playlist=sWlC04cMzFs&amp;loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Carousel End -->
+            
+            <br>
+            <hr>
+
+            </div>
+            <div class="wrapper">
+              <div class="page-header2">
+                <div class="section-header">
+                    <br><h2><b>지도</b></h2>
+                </div>
+                <div>
+                    <p>
+                        <img id="map" src="img/basic-map.png"  usemap="#Map" />
+                        <map name="Map">
+                          <area shape="rect" coords="257, 73, 340, 150"  onmouseover="changeImg('img/map-as.png')" onmouseout="changeImg('img/basic-map.png')" href="as.html" target="">
+                          <area shape="rect" coords="135, 235, 210, 360"  onmouseover="changeImg('img/map-br.png')" onmouseout="changeImg('img/basic-map.png')" href="br.html" target="">
+                          <area shape="rect" coords="220, 305, 295, 370"  onmouseover="changeImg('img/map-by.png')" onmouseout="changeImg('img/basic-map.png')" href="by.html" target="">
+                          <area shape="rect" coords="345, 75, 420, 170"  onmouseover="changeImg('img/map-ch.png')" onmouseout="changeImg('img/basic-map.png')" href="ca.html" target="">
+                          <area shape="rect" coords="220, 230, 290, 290"  onmouseover="changeImg('img/map-cy.png')" onmouseout="changeImg('img/basic-map.png')" href="cy.html" target="">
+                          <area shape="rect" coords="150, 20, 255, 110"  onmouseover="changeImg('img/map-dj.png')" onmouseout="changeImg('img/basic-map.png')" href="dj.html" target="">
+                          <area shape="rect" coords="360, 300, 395, 340"  onmouseover="changeImg('img/map-gr.png')" onmouseout="changeImg('img/basic-map.png')" href="gr.html" target="">
+                          <area shape="rect" coords="140, 185, 220, 245"  onmouseover="changeImg('img/map-hs.png')" onmouseout="changeImg('img/basic-map.png')" href="hs.html" target="">
+                          <area shape="rect" coords="290, 190, 390, 295"  onmouseover="changeImg('img/map-kj.png')" onmouseout="changeImg('img/basic-map.png')" href="gj.html" target="">
+                          <area shape="rect" coords="410, 330, 500, 435"  onmouseover="changeImg('img/map-ks.png')" onmouseout="changeImg('img/basic-map.png')" href="gs.html" target="">
+                          <area shape="rect" coords="310, 340, 400, 400"  onmouseover="changeImg('img/map-ns.png')" onmouseout="changeImg('img/basic-map.png')" href="ns.html" target="">
+                          <area shape="rect" coords="160, 360, 240, 420"  onmouseover="changeImg('img/map-sc.png')" onmouseout="changeImg('img/basic-map.png')" href="sc.html" target="">
+                          <area shape="rect" coords="100, 100, 180, 175"  onmouseover="changeImg('img/map-ss.png')" onmouseout="changeImg('img/basic-map.png')" href="ss.html" target="">
+                          <area shape="rect" coords="30, 65, 105, 270"  onmouseover="changeImg('img/map-ta.png')" onmouseout="changeImg('img/basic-map.png')" href="ta.html" target="">
+                          <area shape="rect" coords="210, 130, 280, 215"  onmouseover="changeImg('img/map-ys.png')" onmouseout="changeImg('img/basic-map.png')" href="ys.html" target="">
+                        </map>
+                    </p>
+                </div>
+                <!-- <div class="container" style="margin-left: 0px;">
+                        <iframe src="page_1.html" style=" width: 100%; height: 600px; border: 0;" FRAMEBORDER="no" BORDER="0" SCROLLING="no" ID="estframe">
+
+                        </iframe>
+                </div> -->
+            </div>
+          </div>
+            <br><br><br>
+            <!-- About End -->
+            <hr>
+            <div class="wrapper">
+                <div class="page-header2">
+                  <div class="container">
+                          <iframe src="https://my.matterport.com/show/?m=QBVSXG8AzXt" style=" width: 100%; height: 500px;">
+                          </iframe>
+                  </div>
+              </div>
+            </div>
+            <br><br><br>
+         
+            <!-- Blog Start -->
+            <div class="blog">
+                <div class="container">
+                    <div class="section-header">
+                        <h2><b>사용자 추천 명소</b></h2>
+                    </div>
+                    <div class="owl-carousel blog-carousel" >
+
+
+
+                        <div class="blog-item" >
+                            <img src="img/ca_block.jpg" alt="Blog" id="introImg">
+                            <h3>벽돌폐공장</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                천안시 서북구 성환읍
+                            </div>
+                            <p>
+                              한때는 벽돌공장이었지만 지금은 가동을 멈춘 폐공장이다. 중간마다 가마 입구로 들어오는 빛은 신비로운 느낌을 주는 요소로 작용하며, 다른 폐건물과 다르게 독특한 분위기를 연출한다.
+                            </p>
+                            <a class="btn" href="ca_block.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="blog-item">
+                            <img src="img/ta_gdong.jpg" alt="Blog" id="introImg2">
+                            <h3>갱지동굴</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                태안군 안면읍 창기리
+                            </div>
+                            <p>
+                              충남 천연 동굴중의 하나로써 일명 갱지동굴로 잘 알려져 있다. 갱지동굴이랑 한자식의 표기로 언덕강 불을자를 써서 본뜻은 굴속으로 뚫린 땅을 뜻하는 말이다.
+                            </p>
+                            <a class="btn" href="ta_gdong.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="blog-item">
+                            <img src="img/gs_tego.jpg" alt="Blog" id="introImg3">
+                            <h3>태고사</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                금산군 진산면 행정리
+                            </div>
+                            <p>
+                              태고사는 충청남도 금산군 진산면 대둔산 부근 깊은 산 속에 위치한 사찰로 멋진 풍경을 자랑하며, 여유롭게 둘러보며 힐링을 즐길 수 있는 사찰. 신라 신문왕 때 원효대사가 창건한 사찰
+                            </p>
+                            <a class="btn" href="gs_tego.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="blog-item">
+                            <img src="img/gj_krhouse1.jpg" alt="Blog" id="introImg4">
+                            <h3>공주한옥마을</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                공주시 관광단지길 12
+                            </div>
+                            <p>
+                              공주 한옥마을은 한국 전통난방과 다양한 체험이 가능하며, 자연친환경적 재료를 사용하여 설계된 신 한옥인 만큼 가족여행, 수학여행, 워크숍 등 관광과 휴양으로 훌륭하다.
+                            </p>
+                            <a class="btn" href="gj_krhouse.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="blog-item">
+                            <img src="img/ta_ubeach1.jpg" alt="Blog" id="introImg5">
+                            <h3>운여해변</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                태안군 고남면 장삼포로
+                            </div>
+                            <p>
+                              샛별해수욕장과 장삼포해수욕장 사이에 위치해 있는 운여해변은 해안사구와 독살등 자연그대로 남아 있는 자연풍경이 아름다운 해변이다.
+                            </p><br>
+                            <a class="btn" href="ta_ubeach.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog End -->
+         
+            <div class="container footer-menu" >
+                <div class="contents">
+                    <!-- 하단 sns 소셜 링크 -->
+                    <!-- <div class="social" style="text-align: center;">
+                        <a href="https://www.cnfc.or.kr/" target="_blank"><i class="fas fa-home"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="https://www.youtube.com/channel/UCTVM6iw_DjQpou88n4dCvTA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div> -->
+                    
+                    <div class="banner">
+                        <ul>
+                            <li><img src="img/banner05.jpg" width="100%" height="210px"></li>
+                            <li><img src="img/banner06.jpg" width="100%" height="210px"></li>
+                            <li><img src="img/banner07.jpg" width="100%" height="210px"></li>
+                            <li><img src="img/banner08.jpg" width="100%" height="210px"></li>
+                            <li><img src="img/banner09.jpg" width="100%" height="210px"></li>
+                            <li><img src="img/banner10.jpg" width="100%" height="210px"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <!-- Footer End -->
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
